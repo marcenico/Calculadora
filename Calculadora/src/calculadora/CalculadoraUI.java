@@ -25,6 +25,7 @@ public class CalculadoraUI extends javax.swing.JFrame {
      */
     public CalculadoraUI() {
         initComponents();
+
     }
 
     /**
@@ -53,196 +54,189 @@ public class CalculadoraUI extends javax.swing.JFrame {
         btnMultiplicacion = new javax.swing.JButton();
         btnDivision = new javax.swing.JButton();
         btnIgual = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(540, 960));
+        setMinimumSize(new java.awt.Dimension(270, 430));
+        setPreferredSize(new java.awt.Dimension(270, 430));
+        setResizable(false);
+        setSize(new java.awt.Dimension(270, 430));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        Display.setBackground(new java.awt.Color(204, 204, 204));
+        Display.setFont(new java.awt.Font("Verdana", 0, 18)); // NOI18N
+        Display.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        getContentPane().add(Display, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 230, 39));
+
+        btn7.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btn7.setForeground(new java.awt.Color(153, 0, 153));
         btn7.setText("7");
         btn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn7ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 47, 32));
 
+        btn9.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btn9.setForeground(new java.awt.Color(153, 0, 153));
         btn9.setText("9");
         btn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn9ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 48, 32));
 
+        btn8.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btn8.setForeground(new java.awt.Color(153, 0, 153));
         btn8.setText("8");
         btn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn8ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 47, 32));
 
+        btn5.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btn5.setForeground(new java.awt.Color(153, 0, 153));
         btn5.setText("5");
         btn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn5ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 48, 32));
 
+        btn4.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btn4.setForeground(new java.awt.Color(153, 0, 153));
         btn4.setText("4");
         btn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn4ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 48, 32));
 
+        btn6.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btn6.setForeground(new java.awt.Color(153, 0, 153));
         btn6.setText("6");
         btn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn6ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 48, 32));
 
+        btn2.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btn2.setForeground(new java.awt.Color(153, 0, 153));
         btn2.setText("2");
         btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn2ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, 46, 32));
 
+        btn3.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btn3.setForeground(new java.awt.Color(153, 0, 153));
         btn3.setText("3");
         btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn3ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 46, 32));
 
+        btn1.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btn1.setForeground(new java.awt.Color(153, 0, 153));
         btn1.setText("1");
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 46, 32));
 
-        btnComa.setText(";");
+        btnComa.setBackground(new java.awt.Color(204, 204, 204));
+        btnComa.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btnComa.setForeground(new java.awt.Color(153, 0, 153));
+        btnComa.setText(",");
+        btnComa.setAlignmentX(0.5F);
         btnComa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnComaActionPerformed(evt);
             }
         });
+        getContentPane().add(btnComa, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 46, 32));
 
+        btnSuma.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btnSuma.setForeground(new java.awt.Color(153, 0, 153));
         btnSuma.setText("+");
         btnSuma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumaActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 46, 32));
 
+        btnResta.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btnResta.setForeground(new java.awt.Color(153, 0, 153));
         btnResta.setText("-");
         btnResta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRestaActionPerformed(evt);
             }
         });
+        getContentPane().add(btnResta, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, 46, 32));
 
+        btn0.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btn0.setForeground(new java.awt.Color(153, 0, 153));
         btn0.setText("0");
         btn0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn0ActionPerformed(evt);
             }
         });
+        getContentPane().add(btn0, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 46, 32));
 
+        btnMultiplicacion.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btnMultiplicacion.setForeground(new java.awt.Color(153, 0, 153));
         btnMultiplicacion.setText("*");
         btnMultiplicacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMultiplicacionActionPerformed(evt);
             }
         });
+        getContentPane().add(btnMultiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, 46, 32));
 
+        btnDivision.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btnDivision.setForeground(new java.awt.Color(153, 0, 153));
         btnDivision.setText("%");
         btnDivision.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDivisionActionPerformed(evt);
             }
         });
+        getContentPane().add(btnDivision, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 46, 32));
 
+        btnIgual.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
+        btnIgual.setForeground(new java.awt.Color(153, 0, 153));
         btnIgual.setText("=");
         btnIgual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIgualActionPerformed(evt);
             }
         });
+        getContentPane().add(btnIgual, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, 46, 32));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(Display, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnComa, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(btn0, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(45, 45, 45)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnMultiplicacion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnIgual, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnResta, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-                            .addComponent(btnDivision, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(37, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Display, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnSuma, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnResta, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btn7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnMultiplicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDivision, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnComa, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btn0, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(32, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo-ubuntu-trusty-1-690x431.jpg"))); // NOI18N
+        jLabel1.setMaximumSize(new java.awt.Dimension(270, 430));
+        jLabel1.setMinimumSize(new java.awt.Dimension(540, 960));
+        jLabel1.setName(""); // NOI18N
+        jLabel1.setPreferredSize(new java.awt.Dimension(270, 430));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 430));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -403,5 +397,6 @@ public class CalculadoraUI extends javax.swing.JFrame {
     private javax.swing.JButton btnMultiplicacion;
     private javax.swing.JButton btnResta;
     private javax.swing.JButton btnSuma;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
