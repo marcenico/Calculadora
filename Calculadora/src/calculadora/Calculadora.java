@@ -16,7 +16,8 @@ public class Calculadora {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int b;
+        int numero1;
+        int numero2;
     }
     
 }
