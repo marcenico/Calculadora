@@ -14,5 +14,8 @@ public class OpSecundaria {
     public static float Multiplicacion(float a, float b){
         return a*b;
     }
-    
+    public static float Division(float a, float b){
+        return a/b;
+        
+    }
 }
