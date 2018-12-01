@@ -15,6 +15,10 @@ public class OpSecundaria {
         return a*b;
     }
     public static float Division(float a, float b){
+        if (b == 0){
+            System.out.println("No se puede divir entre cero");
+            return a;
+        }
         return a/b;
         
     }

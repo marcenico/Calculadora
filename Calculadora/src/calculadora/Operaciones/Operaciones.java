@@ -17,6 +17,9 @@ public class Operaciones {
         suma, resta, multiplicacion, divicion
     }
 
+    public Operaciones() {
+    }
+    
     public Operaciones(Operacion operacion) {
         this.operacion = operacion;
     }
@@ -38,5 +41,14 @@ public class Operaciones {
         }
         return 0;
     }
+
+    public Operacion getOperacion() {
+        return operacion;
+    }
+
+    public void setOperacion(Operacion operacion) {
+        this.operacion = operacion;
+    }
+    
 
 }
