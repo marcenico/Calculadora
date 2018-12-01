@@ -10,12 +10,24 @@ package calculadora.Operaciones;
  * @author Marcelo
  */
 public class OpPrimaria {
-    
-    public static float Suma(float a, float b){
+
+
+    float numero1;
+    float numero2;
+    //float resultado;
+    //Operaciones op
+
+    public static float Suma(float a, float b) {
         return a + b;
     }
-    
-    public static float Resta(float a, float b){
+
+    public static float Resta(float a, float b) {
         return a - b;
     }
+
+//    public void apreteSumar() {
+// 
+//       op = new Operaciones(Operaciones.Operacion.suma);
+//    borrar pantalla
+//    }
 }
