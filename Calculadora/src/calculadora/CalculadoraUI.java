@@ -262,6 +262,9 @@ public class CalculadoraUI extends javax.swing.JFrame {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 btnResetMousePressed(evt);
             }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                btnResetMouseReleased(evt);
+            }
         });
         getContentPane().add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 50, 50));
 
@@ -276,17 +279,11 @@ public class CalculadoraUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-        if (!yaTieneOperacion) {
-            textoEnDisplay = "";
-        }
         textoEnDisplay = textoEnDisplay + "7";
         Display.setText(textoEnDisplay);
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
-        if (!yaTieneOperacion) {
-            textoEnDisplay = "";
-        }
         textoEnDisplay = textoEnDisplay + "8";
         Display.setText(textoEnDisplay);
     }//GEN-LAST:event_btn8ActionPerformed
@@ -301,66 +298,42 @@ public class CalculadoraUI extends javax.swing.JFrame {
     }
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
-        if (!yaTieneOperacion) {
-            textoEnDisplay = "";
-        }
         textoEnDisplay = textoEnDisplay + "9";
         Display.setText(textoEnDisplay);
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-        if (!yaTieneOperacion) {
-            textoEnDisplay = "";
-        }
         textoEnDisplay = textoEnDisplay + "6";
         Display.setText(textoEnDisplay);
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        if (!yaTieneOperacion) {
-            textoEnDisplay = "";
-        }
         textoEnDisplay = textoEnDisplay + "5";
         Display.setText(textoEnDisplay);
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        if (!yaTieneOperacion) {
-            textoEnDisplay = "";
-        }
         textoEnDisplay = textoEnDisplay + "4";
         Display.setText(textoEnDisplay);
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
-        if (!yaTieneOperacion) {
-            textoEnDisplay = "";
-        }
         textoEnDisplay = textoEnDisplay + "3";
         Display.setText(textoEnDisplay);
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
-        if (!yaTieneOperacion) {
-            textoEnDisplay = "";
-        }
         textoEnDisplay = textoEnDisplay + "2";
         Display.setText(textoEnDisplay);
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        if (!yaTieneOperacion) {
-            textoEnDisplay = "";
-        }
         textoEnDisplay = textoEnDisplay + "1";
         Display.setText(textoEnDisplay);
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
-        if (!yaTieneOperacion) {
-            textoEnDisplay = "";
-        }
-        textoEnDisplay = textoEnDisplay + "0";
+         textoEnDisplay = textoEnDisplay + "0";
         Display.setText(textoEnDisplay);
     }//GEN-LAST:event_btn0ActionPerformed
 
@@ -428,6 +401,10 @@ public class CalculadoraUI extends javax.swing.JFrame {
     private void btnResetMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnResetMousePressed
         btnReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/resetPressed.png")));
     }//GEN-LAST:event_btnResetMousePressed
+
+    private void btnResetMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnResetMouseReleased
+       btnReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/reset.png")));
+    }//GEN-LAST:event_btnResetMouseReleased
 
     /**
      * @param args the command line arguments
