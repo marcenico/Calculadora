@@ -19,7 +19,7 @@ public class Operaciones {
 
     public Operaciones() {
     }
-    
+
     public Operaciones(Operacion operacion) {
         this.operacion = operacion;
     }
@@ -37,9 +37,9 @@ public class Operaciones {
                 return OpSecundaria.Division(numero1, numero2);
             default:
                 System.out.println("ERROR");
-                break;
+                return 0;
+
         }
-        return 0;
     }
 
     public Operacion getOperacion() {
@@ -49,6 +49,5 @@ public class Operaciones {
     public void setOperacion(Operacion operacion) {
         this.operacion = operacion;
     }
-    
 
 }

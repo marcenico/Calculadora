@@ -54,12 +54,12 @@ public class CalculadoraUI extends javax.swing.JFrame {
         btnMultiplicacion = new javax.swing.JButton();
         btnDivision = new javax.swing.JButton();
         btnIgual = new javax.swing.JButton();
+        btnReset = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(540, 960));
         setMinimumSize(new java.awt.Dimension(270, 430));
-        setPreferredSize(new java.awt.Dimension(270, 430));
         setResizable(false);
         setSize(new java.awt.Dimension(270, 430));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -69,99 +69,108 @@ public class CalculadoraUI extends javax.swing.JFrame {
         Display.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         getContentPane().add(Display, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 230, 39));
 
+        btn7.setBackground(new java.awt.Color(0, 0, 0));
         btn7.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btn7.setForeground(new java.awt.Color(153, 0, 153));
+        btn7.setForeground(new java.awt.Color(255, 255, 255));
         btn7.setText("7");
         btn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn7ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 47, 32));
+        getContentPane().add(btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 47, 32));
 
+        btn9.setBackground(new java.awt.Color(0, 0, 0));
         btn9.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btn9.setForeground(new java.awt.Color(153, 0, 153));
+        btn9.setForeground(new java.awt.Color(255, 255, 255));
         btn9.setText("9");
         btn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn9ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 48, 32));
+        getContentPane().add(btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, 48, 32));
 
+        btn8.setBackground(new java.awt.Color(0, 0, 0));
         btn8.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btn8.setForeground(new java.awt.Color(153, 0, 153));
+        btn8.setForeground(new java.awt.Color(255, 255, 255));
         btn8.setText("8");
         btn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn8ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 47, 32));
+        getContentPane().add(btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 47, 32));
 
+        btn5.setBackground(new java.awt.Color(0, 0, 0));
         btn5.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btn5.setForeground(new java.awt.Color(153, 0, 153));
+        btn5.setForeground(new java.awt.Color(255, 255, 255));
         btn5.setText("5");
         btn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn5ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 48, 32));
+        getContentPane().add(btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 48, 32));
 
+        btn4.setBackground(new java.awt.Color(0, 0, 0));
         btn4.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btn4.setForeground(new java.awt.Color(153, 0, 153));
+        btn4.setForeground(new java.awt.Color(255, 255, 255));
         btn4.setText("4");
         btn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn4ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 48, 32));
+        getContentPane().add(btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 48, 32));
 
+        btn6.setBackground(new java.awt.Color(0, 0, 0));
         btn6.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btn6.setForeground(new java.awt.Color(153, 0, 153));
+        btn6.setForeground(new java.awt.Color(255, 255, 255));
         btn6.setText("6");
         btn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn6ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 190, 48, 32));
+        getContentPane().add(btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 48, 32));
 
+        btn2.setBackground(new java.awt.Color(0, 0, 0));
         btn2.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btn2.setForeground(new java.awt.Color(153, 0, 153));
+        btn2.setForeground(new java.awt.Color(255, 255, 255));
         btn2.setText("2");
         btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn2ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, 46, 32));
+        getContentPane().add(btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 46, 32));
 
+        btn3.setBackground(new java.awt.Color(0, 0, 0));
         btn3.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btn3.setForeground(new java.awt.Color(153, 0, 153));
+        btn3.setForeground(new java.awt.Color(255, 255, 255));
         btn3.setText("3");
         btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn3ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 46, 32));
+        getContentPane().add(btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 310, 46, 32));
 
+        btn1.setBackground(new java.awt.Color(0, 0, 0));
         btn1.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btn1.setForeground(new java.awt.Color(153, 0, 153));
+        btn1.setForeground(new java.awt.Color(255, 255, 255));
         btn1.setText("1");
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 46, 32));
+        getContentPane().add(btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 46, 32));
 
-        btnComa.setBackground(new java.awt.Color(204, 204, 204));
+        btnComa.setBackground(new java.awt.Color(0, 0, 0));
         btnComa.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btnComa.setForeground(new java.awt.Color(153, 0, 153));
+        btnComa.setForeground(new java.awt.Color(255, 255, 255));
         btnComa.setText(",");
         btnComa.setAlignmentX(0.5F);
         btnComa.addActionListener(new java.awt.event.ActionListener() {
@@ -169,67 +178,92 @@ public class CalculadoraUI extends javax.swing.JFrame {
                 btnComaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnComa, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 46, 32));
+        getContentPane().add(btnComa, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 360, 46, 32));
 
+        btnSuma.setBackground(new java.awt.Color(0, 0, 0));
         btnSuma.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btnSuma.setForeground(new java.awt.Color(153, 0, 153));
+        btnSuma.setForeground(new java.awt.Color(255, 255, 255));
         btnSuma.setText("+");
         btnSuma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSumaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 46, 32));
+        getContentPane().add(btnSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 46, 32));
 
+        btnResta.setBackground(new java.awt.Color(0, 0, 0));
         btnResta.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btnResta.setForeground(new java.awt.Color(153, 0, 153));
+        btnResta.setForeground(new java.awt.Color(255, 255, 255));
         btnResta.setText("-");
         btnResta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRestaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnResta, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, 46, 32));
+        getContentPane().add(btnResta, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 46, 32));
 
+        btn0.setBackground(new java.awt.Color(0, 0, 0));
         btn0.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btn0.setForeground(new java.awt.Color(153, 0, 153));
+        btn0.setForeground(new java.awt.Color(255, 255, 255));
         btn0.setText("0");
         btn0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn0ActionPerformed(evt);
             }
         });
-        getContentPane().add(btn0, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 46, 32));
+        getContentPane().add(btn0, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 46, 32));
 
+        btnMultiplicacion.setBackground(new java.awt.Color(0, 0, 0));
         btnMultiplicacion.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btnMultiplicacion.setForeground(new java.awt.Color(153, 0, 153));
+        btnMultiplicacion.setForeground(new java.awt.Color(255, 255, 255));
         btnMultiplicacion.setText("*");
         btnMultiplicacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMultiplicacionActionPerformed(evt);
             }
         });
-        getContentPane().add(btnMultiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, 46, 32));
+        getContentPane().add(btnMultiplicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 46, 32));
 
+        btnDivision.setBackground(new java.awt.Color(0, 0, 0));
         btnDivision.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btnDivision.setForeground(new java.awt.Color(153, 0, 153));
+        btnDivision.setForeground(new java.awt.Color(255, 255, 255));
         btnDivision.setText("%");
         btnDivision.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDivisionActionPerformed(evt);
             }
         });
-        getContentPane().add(btnDivision, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 46, 32));
+        getContentPane().add(btnDivision, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, 46, 32));
 
+        btnIgual.setBackground(new java.awt.Color(0, 0, 0));
         btnIgual.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
-        btnIgual.setForeground(new java.awt.Color(153, 0, 153));
+        btnIgual.setForeground(new java.awt.Color(255, 255, 255));
         btnIgual.setText("=");
         btnIgual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIgualActionPerformed(evt);
             }
         });
-        getContentPane().add(btnIgual, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, 46, 32));
+        getContentPane().add(btnIgual, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 46, 32));
+
+        btnReset.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        btnReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/resetOut.png"))); // NOI18N
+        btnReset.setAlignmentX(0.5F);
+        btnReset.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnResetMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btnResetMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btnResetMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnResetMousePressed(evt);
+            }
+        });
+        getContentPane().add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, 50, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/fondo-ubuntu-trusty-1-690x431.jpg"))); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(270, 430));
@@ -262,7 +296,6 @@ public class CalculadoraUI extends javax.swing.JFrame {
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
         textoEnDisplay = textoEnDisplay + "9";
         Display.setText(textoEnDisplay);
-        // TODO add your handling code here:
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
@@ -323,8 +356,9 @@ public class CalculadoraUI extends javax.swing.JFrame {
             numero2 = Float.parseFloat(textoEnDisplay);
             String resultado = Float.toString(op.HaceOperacion(numero1, numero2));
             Display.setText(resultado);
+            textoEnDisplay = resultado;
             numero1 = op.HaceOperacion(numero1, numero2);
-            textoEnDisplay = "";
+            yaTieneOperacion = false;
     }//GEN-LAST:event_btnIgualActionPerformed
     }
     private void btnMultiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultiplicacionActionPerformed
@@ -335,14 +369,34 @@ public class CalculadoraUI extends javax.swing.JFrame {
             op.setOperacion(Operaciones.Operacion.multiplicacion);
     }//GEN-LAST:event_btnMultiplicacionActionPerformed
     }
+
     private void btnDivisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivisionActionPerformed
-     if (yaTieneOperacion == false && textoEnDisplay != "") {
+        if (yaTieneOperacion == false && textoEnDisplay != "") {
             numero1 = Float.parseFloat(textoEnDisplay);
             textoEnDisplay = "";
             yaTieneOperacion = true;
-            op.setOperacion(Operaciones.Operacion.divicion);   
+            op.setOperacion(Operaciones.Operacion.divicion);
     }//GEN-LAST:event_btnDivisionActionPerformed
     }
+
+    private void btnResetMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnResetMouseClicked
+        Display.setText("");
+        textoEnDisplay = "";
+        numero1 = numero2 = 0;
+        yaTieneOperacion = false;
+    }//GEN-LAST:event_btnResetMouseClicked
+
+    private void btnResetMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnResetMouseEntered
+        btnReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/reset.png")));
+    }//GEN-LAST:event_btnResetMouseEntered
+
+    private void btnResetMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnResetMouseExited
+        btnReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/resetOut.png")));
+    }//GEN-LAST:event_btnResetMouseExited
+
+    private void btnResetMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnResetMousePressed
+        btnReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/resetPressed.png")));
+    }//GEN-LAST:event_btnResetMousePressed
 
     /**
      * @param args the command line arguments
@@ -358,16 +412,24 @@ public class CalculadoraUI extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CalculadoraUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CalculadoraUI.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CalculadoraUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CalculadoraUI.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CalculadoraUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CalculadoraUI.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CalculadoraUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CalculadoraUI.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -395,6 +457,7 @@ public class CalculadoraUI extends javax.swing.JFrame {
     private javax.swing.JButton btnDivision;
     private javax.swing.JButton btnIgual;
     private javax.swing.JButton btnMultiplicacion;
+    private javax.swing.JLabel btnReset;
     private javax.swing.JButton btnResta;
     private javax.swing.JButton btnSuma;
     private javax.swing.JLabel jLabel1;
