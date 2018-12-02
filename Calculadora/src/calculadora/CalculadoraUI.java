@@ -171,7 +171,7 @@ public class CalculadoraUI extends javax.swing.JFrame {
         btnComa.setBackground(new java.awt.Color(0, 0, 0));
         btnComa.setFont(new java.awt.Font("Trebuchet MS", 1, 20)); // NOI18N
         btnComa.setForeground(new java.awt.Color(255, 255, 255));
-        btnComa.setText(",");
+        btnComa.setText(".");
         btnComa.setAlignmentX(0.5F);
         btnComa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -335,7 +335,7 @@ public class CalculadoraUI extends javax.swing.JFrame {
 
     private void btnComaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComaActionPerformed
         if (textoEnDisplay != "" && !tieneComa) {
-            textoEnDisplay = textoEnDisplay + ",";
+            textoEnDisplay = textoEnDisplay + ".";
             Display.setText(textoEnDisplay);
             tieneComa = true;
         }
