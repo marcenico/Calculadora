@@ -25,7 +25,9 @@ public class Operaciones {
     }
 
     public float HaceOperacion(float numero1, float numero2) {
-
+        if (operacion == null) {
+            return 0;
+        }
         switch (operacion) {
             case suma:
                 return OpPrimaria.Suma(numero1, numero2);
